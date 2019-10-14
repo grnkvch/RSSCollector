@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/RSSCollector/static/css/main.1f327ea7.chunk.css",
+    "main.js": "/RSSCollector/static/js/main.b0f8b9c2.chunk.js",
+    "main.js.map": "/RSSCollector/static/js/main.b0f8b9c2.chunk.js.map",
+    "runtime-main.js": "/RSSCollector/static/js/runtime-main.a6d6826d.js",
+    "runtime-main.js.map": "/RSSCollector/static/js/runtime-main.a6d6826d.js.map",
+    "static/js/2.fd1ca35f.chunk.js": "/RSSCollector/static/js/2.fd1ca35f.chunk.js",
+    "static/js/2.fd1ca35f.chunk.js.map": "/RSSCollector/static/js/2.fd1ca35f.chunk.js.map",
+    "index.html": "/RSSCollector/index.html",
+    "precache-manifest.01308680060b63da9794b11f9c353a17.js": "/RSSCollector/precache-manifest.01308680060b63da9794b11f9c353a17.js",
+    "service-worker.js": "/RSSCollector/service-worker.js",
+    "static/css/main.1f327ea7.chunk.css.map": "/RSSCollector/static/css/main.1f327ea7.chunk.css.map",
+    "static/media/logo.svg": "/RSSCollector/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6d6826d.js",
+    "static/js/2.fd1ca35f.chunk.js",
+    "static/css/main.1f327ea7.chunk.css",
+    "static/js/main.b0f8b9c2.chunk.js"
+  ]
+}
