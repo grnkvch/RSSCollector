@@ -1,0 +1,9 @@
+.content-container {
+  display: flex;
+  flex-direction: row;
+}
+.control-panel {
+  display: flex;
+  flex-direction: row;
+}
+
