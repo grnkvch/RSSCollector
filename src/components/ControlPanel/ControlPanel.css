@@ -1,4 +1,5 @@
-.content-container {
+.control-panel {
   display: flex;
   flex-direction: row;
 }
+
