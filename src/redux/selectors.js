@@ -1,2 +1,2 @@
-export const getSources = state => state.content.sources;
-export const getContent = state => state.content.content;
+export const getSources = state => state.source;
+export const getContent = state => state.content;

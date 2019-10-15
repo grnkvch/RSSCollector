@@ -65,7 +65,10 @@ const Content = props => {
         onClick={toggleSource}
       />
       <div className='content-container'>
-        {dataConditioner(content).map(item => (<div style={{ maxWidth: `${1 / columnCount * 100}%` }}>{item}</div>))}
+        {dataConditioner(content).map(item =>
+          (<div style={{ maxWidth: `${1 / columnCount * 100}%` }}>
+            {item}
+          </div>))}
       </div>
     </div >
   )

@@ -27,13 +27,12 @@ export const toggleSource = source => ({
 
 export const fetchContent = () => {
   return async function (dispatch, getState) {
-    const { content: { sources } } = getState();
+    const { source } = getState();
 
-    const { data: content } = await axios.get(formQuery(sources));
+    const { data: content } = await axios.get(formQuery(source));
 
     console.log('content', content);
 
-    debugger
     dispatch(addContent(content))
     return content;
   }
