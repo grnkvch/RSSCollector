@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/RSSCollector/static/css/main.1f327ea7.chunk.css",
-    "main.js": "/RSSCollector/static/js/main.b0f8b9c2.chunk.js",
-    "main.js.map": "/RSSCollector/static/js/main.b0f8b9c2.chunk.js.map",
+    "main.css": "/RSSCollector/static/css/main.ea4d78e6.chunk.css",
+    "main.js": "/RSSCollector/static/js/main.c67a375f.chunk.js",
+    "main.js.map": "/RSSCollector/static/js/main.c67a375f.chunk.js.map",
     "runtime-main.js": "/RSSCollector/static/js/runtime-main.a6d6826d.js",
     "runtime-main.js.map": "/RSSCollector/static/js/runtime-main.a6d6826d.js.map",
-    "static/js/2.fd1ca35f.chunk.js": "/RSSCollector/static/js/2.fd1ca35f.chunk.js",
-    "static/js/2.fd1ca35f.chunk.js.map": "/RSSCollector/static/js/2.fd1ca35f.chunk.js.map",
+    "static/js/2.0029107c.chunk.js": "/RSSCollector/static/js/2.0029107c.chunk.js",
+    "static/js/2.0029107c.chunk.js.map": "/RSSCollector/static/js/2.0029107c.chunk.js.map",
     "index.html": "/RSSCollector/index.html",
-    "precache-manifest.01308680060b63da9794b11f9c353a17.js": "/RSSCollector/precache-manifest.01308680060b63da9794b11f9c353a17.js",
+    "precache-manifest.4f5f6c76bb64e4e297c06fe6c0ae5a23.js": "/RSSCollector/precache-manifest.4f5f6c76bb64e4e297c06fe6c0ae5a23.js",
     "service-worker.js": "/RSSCollector/service-worker.js",
-    "static/css/main.1f327ea7.chunk.css.map": "/RSSCollector/static/css/main.1f327ea7.chunk.css.map",
-    "static/media/logo.svg": "/RSSCollector/static/media/logo.25bf045c.svg"
+    "static/css/main.ea4d78e6.chunk.css.map": "/RSSCollector/static/css/main.ea4d78e6.chunk.css.map",
+    "static/media/ControlPanel.css": "/RSSCollector/static/media/DeutschGothic.be92e0be.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.a6d6826d.js",
-    "static/js/2.fd1ca35f.chunk.js",
-    "static/css/main.1f327ea7.chunk.css",
-    "static/js/main.b0f8b9c2.chunk.js"
+    "static/js/2.0029107c.chunk.js",
+    "static/css/main.ea4d78e6.chunk.css",
+    "static/js/main.c67a375f.chunk.js"
   ]
 }
