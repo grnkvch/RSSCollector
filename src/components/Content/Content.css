@@ -5,9 +5,9 @@
 
 .content-column {
   flex: 1;
-  margin: 0 1rem 0 0;
+  border-right: 1px solid black;
 }
 
-.content-column:last-child {
-  margin: 0 0 0 0;
+.content-column:first-child {
+  border-left: 1px solid black;
 }

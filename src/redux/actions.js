@@ -7,6 +7,7 @@ import {
 } from "./actionTypes";
 
 import formQuery from '../helpers/formQuery';
+import { BACK_END } from '../constants/endpoints';
 
 export const addContent = content => ({
   type: ADD_CONTENT,
@@ -36,7 +37,7 @@ export const fetchContent = () => {
 
 export const fetchSource = () => {
   return async function (dispatch) {
-    const { data: sourceList } = await axios.get('https://rss-collector-back.herokuapp.com/get-sources');
+    const { data: sourceList } = await axios.get(`${BACK_END}/get-sources`);
     dispatch(addSource(sourceList))
     return sourceList;
   }
