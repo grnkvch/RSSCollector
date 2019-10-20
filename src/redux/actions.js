@@ -1,8 +1,6 @@
 import axios from 'axios';
 
 import {
-  FETCH_CONTENT,
-  FETCH_SOURCE,
   ADD_CONTENT,
   ADD_SOURCE,
   TOGGLE_SOURCE,
@@ -31,8 +29,6 @@ export const fetchContent = () => {
 
     const { data: content } = await axios.get(formQuery(source));
 
-    console.log('content', content);
-
     dispatch(addContent(content))
     return content;
   }
@@ -41,7 +37,6 @@ export const fetchContent = () => {
 export const fetchSource = () => {
   return async function (dispatch) {
     const { data: sourceList } = await axios.get('https://rss-collector-back.herokuapp.com/get-sources');
-    console.log('sourceList', sourceList);
     dispatch(addSource(sourceList))
     return sourceList;
   }

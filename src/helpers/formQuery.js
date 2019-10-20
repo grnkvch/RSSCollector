@@ -3,6 +3,5 @@ export default function formQuery(sources = new Map()) {
   sources.forEach((checked, source) => {
     if (checked) queryString += `source[]=${source}&`
   });
-  console.log('formQuery', queryString);
   return queryString;
 }

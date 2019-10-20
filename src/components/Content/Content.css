@@ -2,3 +2,12 @@
   display: flex;
   flex-direction: row;
 }
+
+.content-column {
+  flex: 1;
+  margin: 0 1rem 0 0;
+}
+
+.content-column:last-child {
+  margin: 0 0 0 0;
+}

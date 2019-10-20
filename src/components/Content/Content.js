@@ -1,8 +1,6 @@
 
 import React, { useState, useEffect } from 'react'
-import { useSelector, connect } from 'react-redux'
-
-import axios from 'axios'
+import { connect } from 'react-redux'
 
 import dataConditioner from '../../helpers/dataConditioner'
 
@@ -11,18 +9,13 @@ import * as actions from '../../redux/actions'
 import { getSources, getContent } from '../../redux/selectors'
 
 import ItemCard from '../ItemCard'
-import SourceButton from '../SourceButton'
-import ControlPanel from '../ControlPanel'
-
 
 import './Content.css'
 
 
 const Content = props => {
-  console.log('props', props);
   const { fetchSource,
     sources,
-    toggleSource,
     fetchContent,
     data
   } = props;
@@ -33,14 +26,13 @@ const Content = props => {
   useEffect(() => {
     const setCount = () => {
       const width = document.querySelector('.content-container').offsetWidth
-      console.log('width', width);
       if (!width) return;
       const n = Math.floor(width / 200) < 1 ? 1 : Math.floor(width / 200);
       if (n !== columnCount) setColumnCount(n)
     }
     setCount();
     window.addEventListener('resize', setCount)
-  })
+  }, [])
 
   useEffect(() => {
     fetchContent()
@@ -59,18 +51,14 @@ const Content = props => {
   }, [columnCount, data])
 
   return (
-    <div className='container'>
-      <ControlPanel
-        controls={sources}
-        onClick={toggleSource}
-      />
-      <div className='content-container'>
-        {dataConditioner(content).map(item =>
-          (<div style={{ maxWidth: `${1 / columnCount * 100}%` }}>
-            {item}
-          </div>))}
-      </div>
-    </div >
+    <div className='content-container'>
+      {content.map(item =>
+        (<div
+          className='content-column'
+          style={{ maxWidth: `${1 / columnCount * 100}%` }}>
+          {item}
+        </div>))}
+    </div>
   )
 }
 

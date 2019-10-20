@@ -4,7 +4,6 @@ import "./ItemCard.css"
 
 export default function ItemCard(props) {
   const { item } = props;
-  // console.log('item.pubDate', new Date(item.pubDate).toLocaleString());
   return (
     <a key={item.link} className='card' href={item.link} target='_blank' rel="noopener noreferrer">
       <h4>{item.sourceTitle}</h4>

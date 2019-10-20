@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Content from './components/Content'
+import ControlPanel from './components/ControlPanel';
 
 function App() {
   return (
@@ -9,10 +10,11 @@ function App() {
       <header className="App-header">
         RB-NEWS
       </header>
-      <div style={{ maxWidth: '1160px' }}>
-
+      <nav><ControlPanel /></nav>
+      <article style={{ maxWidth: '1160px' }}>
         <Content />
-      </div>
+      </article>
+      <footer></footer>
     </div>
   );
 }

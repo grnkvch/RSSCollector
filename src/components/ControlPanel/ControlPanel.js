@@ -1,18 +1,16 @@
 
-import React, { useState, useEffect } from "react"
+import React from "react"
+import { connect } from 'react-redux'
 
-import axios from "axios"
+import { getSources } from '../../redux/selectors'
 
-import dataConditioner from "../../helpers/dataConditioner"
-
-import ItemCard from "../ItemCard"
 import SourceButton from "../SourceButton"
-
+import { toggleSource } from '../../redux/actions'
 
 import "./ControlPanel.css"
 
 const ControlPanel = props => {
-  const { controls, onClick } = props;
+  const { sources: controls, toggleSource } = props;
 
   return (
     <div className="control-panel">
@@ -20,7 +18,7 @@ const ControlPanel = props => {
         <SourceButton
           key={item}
           checked={checked}
-          onClick={() => onClick(item)}
+          onClick={() => toggleSource(item)}
         >
           {item}
         </SourceButton>
@@ -30,4 +28,13 @@ const ControlPanel = props => {
   )
 }
 
-export default ControlPanel
+const mapStateToProps = (state) => ({
+  sources: getSources(state),
+})
+
+const mapDispatchToProps = { toggleSource }
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ControlPanel);
