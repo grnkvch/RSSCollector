@@ -4,7 +4,7 @@ import {
   TOGGLE_SOURCE
 } from "../actionTypes";
 
-const initialState = new Map();
+const initialState = new Map(localStorage.sources ? JSON.parse(localStorage.sources) : null);
 
 export default function (state = initialState, action) {
   switch (action.type) {
@@ -13,7 +13,9 @@ export default function (state = initialState, action) {
 
       return new Map([
         ...state,
-        ...sourceList.map(item => [item, true]),
+        ...sourceList.map(item => [item,
+          state.has(item) ? state.get(item) : true
+        ]),
       ])
     }
     case TOGGLE_SOURCE: {

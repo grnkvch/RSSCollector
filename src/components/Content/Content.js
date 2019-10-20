@@ -14,10 +14,11 @@ import './Content.css'
 
 
 const Content = props => {
-  const { fetchSource,
+  const {
+    fetchSource,
     sources,
     fetchContent,
-    data
+    data,
   } = props;
 
   const [columnCount, setColumnCount] = useState(1);
@@ -35,12 +36,17 @@ const Content = props => {
   }, [])
 
   useEffect(() => {
+    fetchSource()
+  }, [])
+
+  useEffect(() => {
     fetchContent()
   }, [sources])
 
   useEffect(() => {
-    fetchSource()
-  }, [])
+    localStorage.setItem('sources', JSON.stringify([...sources]));
+  }, [sources])
+
 
   useEffect(() => {
     if (!Array.isArray(data)) return;

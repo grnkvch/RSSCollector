@@ -7,6 +7,10 @@
        url('./fonts/DeutschGothic.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
+nav {
+  margin: 1.5rem 0;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -17,15 +21,12 @@
   padding: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   font-size: 5rem;
   font-family: 'Deutsch Gothic', 'Noto Serif SC', serif;;
   text-align: center;
- text-transform: capitalize;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
 }
 
 article {
